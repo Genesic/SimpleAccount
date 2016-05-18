@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01302A8D1CD22DBC00E2723A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01302A8C1CD22DBC00E2723A /* AppDelegate.swift */; };
+		01302A8F1CD22DBC00E2723A /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01302A8E1CD22DBC00E2723A /* AccountViewController.swift */; };
+		01302A921CD22DBC00E2723A /* Account.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01302A901CD22DBC00E2723A /* Account.storyboard */; };
+		01302A941CD22DBC00E2723A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01302A931CD22DBC00E2723A /* Assets.xcassets */; };
+		01302A971CD22DBC00E2723A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01302A951CD22DBC00E2723A /* LaunchScreen.storyboard */; };
+		01302AAD1CD22FC200E2723A /* PDTSimpleCalendarViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01302AA41CD22FC200E2723A /* PDTSimpleCalendarViewCell.m */; };
+		01302AAE1CD22FC200E2723A /* PDTSimpleCalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01302AA61CD22FC200E2723A /* PDTSimpleCalendarViewController.m */; };
+		01302AAF1CD22FC200E2723A /* PDTSimpleCalendarViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 01302AA81CD22FC200E2723A /* PDTSimpleCalendarViewFlowLayout.m */; };
+		01302AB01CD22FC200E2723A /* PDTSimpleCalendarViewHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 01302AAA1CD22FC200E2723A /* PDTSimpleCalendarViewHeader.m */; };
+		01302AB11CD22FC200E2723A /* PDTSimpleCalendarViewWeekdayHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 01302AAC1CD22FC200E2723A /* PDTSimpleCalendarViewWeekdayHeader.m */; };
+		01302AB31CD2306700E2723A /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01302AB21CD2306700E2723A /* AccountModel.swift */; };
+		01302AB51CD302E500E2723A /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01302AB41CD302E500E2723A /* Calendar.swift */; };
+		01302AB71CD30F9C00E2723A /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01302AB61CD30F9C00E2723A /* AccountTableViewCell.swift */; };
+		0180E3C41CD57C7200CBC15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0180E3C31CD57C7200CBC15C /* Main.storyboard */; };
+		0180E3C61CD57E0300CBC15C /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180E3C51CD57E0300CBC15C /* MainTabController.swift */; };
+		0180E3C91CD57F9100CBC15C /* Statistic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0180E3C81CD57F9100CBC15C /* Statistic.storyboard */; };
+		0180E3CB1CD583DC00CBC15C /* StatisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180E3CA1CD583DC00CBC15C /* StatisticModel.swift */; };
+		0180E3CD1CD584B500CBC15C /* StatisticTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180E3CC1CD584B500CBC15C /* StatisticTableViewCell.swift */; };
+		0180E3CF1CD593F500CBC15C /* StatisticHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0180E3CE1CD593F500CBC15C /* StatisticHeaderView.xib */; };
+		0180E3D31CD596F600CBC15C /* StatisticHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180E3D21CD596F600CBC15C /* StatisticHeaderView.swift */; };
+		0180E3D51CD5E12B00CBC15C /* StatisticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0180E3D41CD5E12B00CBC15C /* StatisticTableViewController.swift */; };
+		0180E3DF1CD8F95500CBC15C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0180E3DE1CD8F95500CBC15C /* SQLite.framework */; };
+		0180E3E01CD8F95500CBC15C /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0180E3DE1CD8F95500CBC15C /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		01A78EF31CDA15E300BB757E /* SQLiteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A78EF21CDA15E300BB757E /* SQLiteTest.swift */; };
+		01A78EF51CDA44CF00BB757E /* AccountDbModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A78EF41CDA44CF00BB757E /* AccountDbModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0180E3E11CD8F95600CBC15C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0180E3E01CD8F95500CBC15C /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		01302A891CD22DBC00E2723A /* Account.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Account.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01302A8C1CD22DBC00E2723A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		01302A8E1CD22DBC00E2723A /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		01302A911CD22DBC00E2723A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Account.storyboard; sourceTree = "<group>"; };
+		01302A931CD22DBC00E2723A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		01302A961CD22DBC00E2723A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		01302A981CD22DBC00E2723A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01302AA11CD22FC100E2723A /* Account-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Account-Bridging-Header.h"; sourceTree = "<group>"; };
+		01302AA21CD22FC200E2723A /* PDTSimpleCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTSimpleCalendar.h; sourceTree = "<group>"; };
+		01302AA31CD22FC200E2723A /* PDTSimpleCalendarViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTSimpleCalendarViewCell.h; sourceTree = "<group>"; };
+		01302AA41CD22FC200E2723A /* PDTSimpleCalendarViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTSimpleCalendarViewCell.m; sourceTree = "<group>"; };
+		01302AA51CD22FC200E2723A /* PDTSimpleCalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTSimpleCalendarViewController.h; sourceTree = "<group>"; };
+		01302AA61CD22FC200E2723A /* PDTSimpleCalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTSimpleCalendarViewController.m; sourceTree = "<group>"; };
+		01302AA71CD22FC200E2723A /* PDTSimpleCalendarViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTSimpleCalendarViewFlowLayout.h; sourceTree = "<group>"; };
+		01302AA81CD22FC200E2723A /* PDTSimpleCalendarViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTSimpleCalendarViewFlowLayout.m; sourceTree = "<group>"; };
+		01302AA91CD22FC200E2723A /* PDTSimpleCalendarViewHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTSimpleCalendarViewHeader.h; sourceTree = "<group>"; };
+		01302AAA1CD22FC200E2723A /* PDTSimpleCalendarViewHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTSimpleCalendarViewHeader.m; sourceTree = "<group>"; };
+		01302AAB1CD22FC200E2723A /* PDTSimpleCalendarViewWeekdayHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDTSimpleCalendarViewWeekdayHeader.h; sourceTree = "<group>"; };
+		01302AAC1CD22FC200E2723A /* PDTSimpleCalendarViewWeekdayHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDTSimpleCalendarViewWeekdayHeader.m; sourceTree = "<group>"; };
+		01302AB21CD2306700E2723A /* AccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
+		01302AB41CD302E500E2723A /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Calendar.swift; path = ../Calendar.swift; sourceTree = "<group>"; };
+		01302AB61CD30F9C00E2723A /* AccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		0180E3C31CD57C7200CBC15C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0180E3C51CD57E0300CBC15C /* MainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		0180E3C81CD57F9100CBC15C /* Statistic.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Statistic.storyboard; sourceTree = "<group>"; };
+		0180E3CA1CD583DC00CBC15C /* StatisticModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticModel.swift; sourceTree = "<group>"; };
+		0180E3CC1CD584B500CBC15C /* StatisticTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticTableViewCell.swift; sourceTree = "<group>"; };
+		0180E3CE1CD593F500CBC15C /* StatisticHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StatisticHeaderView.xib; sourceTree = "<group>"; };
+		0180E3D21CD596F600CBC15C /* StatisticHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticHeaderView.swift; sourceTree = "<group>"; };
+		0180E3D41CD5E12B00CBC15C /* StatisticTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticTableViewController.swift; sourceTree = "<group>"; };
+		0180E3DE1CD8F95500CBC15C /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		01A78EF21CDA15E300BB757E /* SQLiteTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteTest.swift; sourceTree = "<group>"; };
+		01A78EF41CDA44CF00BB757E /* AccountDbModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDbModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01302A861CD22DBC00E2723A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0180E3DF1CD8F95500CBC15C /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01302A801CD22DBC00E2723A = {
+			isa = PBXGroup;
+			children = (
+				0180E3DE1CD8F95500CBC15C /* SQLite.framework */,
+				01302A8B1CD22DBC00E2723A /* Account */,
+				01302A8A1CD22DBC00E2723A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01302A8A1CD22DBC00E2723A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01302A891CD22DBC00E2723A /* Account.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01302A8B1CD22DBC00E2723A /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				0180E3C71CD57F6E00CBC15C /* Statistic */,
+				0180E3C01CD57BE100CBC15C /* Account */,
+				01302AA01CD22F9200E2723A /* PDTSimpleCalendar */,
+				01302A9E1CD22DDB00E2723A /* Surpporting Files */,
+				0180E3C31CD57C7200CBC15C /* Main.storyboard */,
+				0180E3C51CD57E0300CBC15C /* MainTabController.swift */,
+				01302AA11CD22FC100E2723A /* Account-Bridging-Header.h */,
+				01A78EF21CDA15E300BB757E /* SQLiteTest.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		01302A9E1CD22DDB00E2723A /* Surpporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01302A981CD22DBC00E2723A /* Info.plist */,
+				01302A951CD22DBC00E2723A /* LaunchScreen.storyboard */,
+				01302A931CD22DBC00E2723A /* Assets.xcassets */,
+				01302A8C1CD22DBC00E2723A /* AppDelegate.swift */,
+			);
+			name = "Surpporting Files";
+			sourceTree = "<group>";
+		};
+		01302AA01CD22F9200E2723A /* PDTSimpleCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				01302AA21CD22FC200E2723A /* PDTSimpleCalendar.h */,
+				01302AA31CD22FC200E2723A /* PDTSimpleCalendarViewCell.h */,
+				01302AA41CD22FC200E2723A /* PDTSimpleCalendarViewCell.m */,
+				01302AA51CD22FC200E2723A /* PDTSimpleCalendarViewController.h */,
+				01302AA61CD22FC200E2723A /* PDTSimpleCalendarViewController.m */,
+				01302AA71CD22FC200E2723A /* PDTSimpleCalendarViewFlowLayout.h */,
+				01302AA81CD22FC200E2723A /* PDTSimpleCalendarViewFlowLayout.m */,
+				01302AA91CD22FC200E2723A /* PDTSimpleCalendarViewHeader.h */,
+				01302AAA1CD22FC200E2723A /* PDTSimpleCalendarViewHeader.m */,
+				01302AAB1CD22FC200E2723A /* PDTSimpleCalendarViewWeekdayHeader.h */,
+				01302AAC1CD22FC200E2723A /* PDTSimpleCalendarViewWeekdayHeader.m */,
+			);
+			name = PDTSimpleCalendar;
+			sourceTree = "<group>";
+		};
+		0180E3C01CD57BE100CBC15C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				01302A901CD22DBC00E2723A /* Account.storyboard */,
+				01302A8E1CD22DBC00E2723A /* AccountViewController.swift */,
+				01302AB41CD302E500E2723A /* Calendar.swift */,
+				01302AB21CD2306700E2723A /* AccountModel.swift */,
+				01302AB61CD30F9C00E2723A /* AccountTableViewCell.swift */,
+				01A78EF41CDA44CF00BB757E /* AccountDbModel.swift */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		0180E3C71CD57F6E00CBC15C /* Statistic */ = {
+			isa = PBXGroup;
+			children = (
+				0180E3C81CD57F9100CBC15C /* Statistic.storyboard */,
+				0180E3CA1CD583DC00CBC15C /* StatisticModel.swift */,
+				0180E3CC1CD584B500CBC15C /* StatisticTableViewCell.swift */,
+				0180E3D41CD5E12B00CBC15C /* StatisticTableViewController.swift */,
+				0180E3CE1CD593F500CBC15C /* StatisticHeaderView.xib */,
+				0180E3D21CD596F600CBC15C /* StatisticHeaderView.swift */,
+			);
+			name = Statistic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01302A881CD22DBC00E2723A /* Account */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01302A9B1CD22DBC00E2723A /* Build configuration list for PBXNativeTarget "Account" */;
+			buildPhases = (
+				01302A851CD22DBC00E2723A /* Sources */,
+				01302A861CD22DBC00E2723A /* Frameworks */,
+				01302A871CD22DBC00E2723A /* Resources */,
+				0180E3E11CD8F95600CBC15C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Account;
+			productName = Account;
+			productReference = 01302A891CD22DBC00E2723A /* Account.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01302A811CD22DBC00E2723A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = chuhenwei;
+				TargetAttributes = {
+					01302A881CD22DBC00E2723A = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = QMZRS955D6;
+					};
+				};
+			};
+			buildConfigurationList = 01302A841CD22DBC00E2723A /* Build configuration list for PBXProject "Account" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 01302A801CD22DBC00E2723A;
+			productRefGroup = 01302A8A1CD22DBC00E2723A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01302A881CD22DBC00E2723A /* Account */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01302A871CD22DBC00E2723A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0180E3CF1CD593F500CBC15C /* StatisticHeaderView.xib in Resources */,
+				01302A971CD22DBC00E2723A /* LaunchScreen.storyboard in Resources */,
+				0180E3C91CD57F9100CBC15C /* Statistic.storyboard in Resources */,
+				01302A941CD22DBC00E2723A /* Assets.xcassets in Resources */,
+				0180E3C41CD57C7200CBC15C /* Main.storyboard in Resources */,
+				01302A921CD22DBC00E2723A /* Account.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01302A851CD22DBC00E2723A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0180E3D51CD5E12B00CBC15C /* StatisticTableViewController.swift in Sources */,
+				0180E3D31CD596F600CBC15C /* StatisticHeaderView.swift in Sources */,
+				01302AB01CD22FC200E2723A /* PDTSimpleCalendarViewHeader.m in Sources */,
+				01302AB51CD302E500E2723A /* Calendar.swift in Sources */,
+				01302A8F1CD22DBC00E2723A /* AccountViewController.swift in Sources */,
+				01302AB71CD30F9C00E2723A /* AccountTableViewCell.swift in Sources */,
+				01302AB11CD22FC200E2723A /* PDTSimpleCalendarViewWeekdayHeader.m in Sources */,
+				01302AB31CD2306700E2723A /* AccountModel.swift in Sources */,
+				0180E3CB1CD583DC00CBC15C /* StatisticModel.swift in Sources */,
+				01302AAF1CD22FC200E2723A /* PDTSimpleCalendarViewFlowLayout.m in Sources */,
+				01A78EF51CDA44CF00BB757E /* AccountDbModel.swift in Sources */,
+				01302AAE1CD22FC200E2723A /* PDTSimpleCalendarViewController.m in Sources */,
+				0180E3C61CD57E0300CBC15C /* MainTabController.swift in Sources */,
+				01302A8D1CD22DBC00E2723A /* AppDelegate.swift in Sources */,
+				01A78EF31CDA15E300BB757E /* SQLiteTest.swift in Sources */,
+				01302AAD1CD22FC200E2723A /* PDTSimpleCalendarViewCell.m in Sources */,
+				0180E3CD1CD584B500CBC15C /* StatisticTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01302A901CD22DBC00E2723A /* Account.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01302A911CD22DBC00E2723A /* Base */,
+			);
+			name = Account.storyboard;
+			sourceTree = "<group>";
+		};
+		01302A951CD22DBC00E2723A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01302A961CD22DBC00E2723A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01302A991CD22DBC00E2723A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		01302A9A1CD22DBC00E2723A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01302A9C1CD22DBC00E2723A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/Carthage/Build/iOS";
+				INFOPLIST_FILE = Account/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = genesic.Account;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Account/Account-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		01302A9D1CD22DBC00E2723A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = "$(SRCROOT)/Carthage/Build/iOS";
+				INFOPLIST_FILE = Account/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = genesic.Account;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Account/Account-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01302A841CD22DBC00E2723A /* Build configuration list for PBXProject "Account" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01302A991CD22DBC00E2723A /* Debug */,
+				01302A9A1CD22DBC00E2723A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01302A9B1CD22DBC00E2723A /* Build configuration list for PBXNativeTarget "Account" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01302A9C1CD22DBC00E2723A /* Debug */,
+				01302A9D1CD22DBC00E2723A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01302A811CD22DBC00E2723A /* Project object */;
+}
